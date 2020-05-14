@@ -1,0 +1,22 @@
+{
+  "name": "new-package",
+  "version": "1.0.0",
+  "description": "Trying to install inquirer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaxGrace/ReadMeGenerator.git"
+  },
+  "author": "Anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaxGrace/ReadMeGenerator/issues"
+  },
+  "homepage": "https://github.com/AnnaxGrace/ReadMeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
