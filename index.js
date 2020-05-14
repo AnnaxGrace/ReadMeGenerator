@@ -1,5 +1,5 @@
-var inquirer = require("inquirer");
-var fs = require("fs");
+const inquirer = require("inquirer");
+const  fs = require("fs");
 
 inquirer.prompt([
     {
@@ -37,6 +37,11 @@ inquirer.prompt([
     },
     {
         type: "input",
+        name: "usage",
+        message: "Provide instructions and examples for use of your project"
+    },
+    {
+        type: "input",
         name: "tests",
         message: "What command should be used to run tests?"
     },
@@ -58,13 +63,13 @@ inquirer.prompt([
     {
         type: "input",
         name: "photo",
-        message: "What is the URL to your gitHub Profile picture?"
+        message: "Please insert a url of an image you would like to use in your readMe."
     },
     
 
 ]).then(function(data) { 
 
-    var filename = data.title + "readme.md";
+    var filename = data.title + "ReadMe.md";
     fs.writeFile(filename,`
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 # ${data.title}
@@ -79,6 +84,8 @@ ${data.description}
 * [Questions](#questions)
 ### Installation
 ${data.installation}
+### Usage
+${data.usage}
 ### License
 ${data.license}
 ### Contributing
