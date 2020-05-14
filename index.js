@@ -66,30 +66,30 @@ inquirer.prompt([
 
     var filename = data.title + "readme.md";
     fs.writeFile(filename,`
-    # ${data.title}
-    ## Description
-    ${data.description}
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
-    ### Installation
-    ${data.installation}
-    ###Usage
-    ###License
-    ${data.license}
-    ###Contributing
-    ${data.contributers}
-    ###Tests
-    ${data.tests}
-    ###Questions
-    Github username: ${data.gitHubUsername}
-    Email: ${data.email}
-    Project URL: ${data.link}
-    Profile Picture: ${data.photo}
+# ${data.title}
+## Description
+${data.description}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+ ### Installation
+${data.installation}
+###Usage
+###License
+${data.license}
+###Contributing
+${data.contributers}
+###Tests
+${data.tests}
+###Questions
+Github username: ${data.gitHubUsername}
+Email: ${data.email}
+Project URL: ${data.link}
+Profile Picture: ${data.photo}
 
     `, function(error) {
     if (error) {
