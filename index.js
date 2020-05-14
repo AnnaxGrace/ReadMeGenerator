@@ -65,7 +65,8 @@ inquirer.prompt([
 ]).then(function(data) { 
 
     var filename = data.title + "readme.md";
-    fs.writeFile(filename,`# ${data.title}
+    fs.writeFile(filename,`
+    # ${data.title}
     ## Description
     ${data.description}
     ## Table of Contents
