@@ -33,7 +33,7 @@ inquirer.prompt([
     {
         type: "input",
         name: "contributers",
-        message: "Please list contributers to the project"
+        message: "Are contributers allowed? Include any rules for contribution."
     },
     {
         type: "input",
@@ -66,6 +66,7 @@ inquirer.prompt([
 
     var filename = data.title + "readme.md";
     fs.writeFile(filename,`
+[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 # ${data.title}
 ## Description
 ${data.description}
@@ -87,7 +88,7 @@ ${data.tests}
 ### Questions
 * Github username: ${data.gitHubUsername}
 * Email: ${data.email}
-* Project URL: ${data.link}
+* Deployed Project URL: ${data.link}
 
 <img src="${data.photo}"
      alt="Contributer Photo"
