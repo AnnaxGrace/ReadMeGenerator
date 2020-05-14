@@ -79,6 +79,7 @@ ${data.description}
 ### Installation
 ${data.installation}
 ###Usage
+This is a placeholder for usage
 ###License
 ${data.license}
 ###Contributing
