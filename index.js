@@ -78,21 +78,20 @@ ${data.description}
 * [Questions](#questions)
 ### Installation
 ${data.installation}
-###Usage
-This is a placeholder for usage
-###License
+### License
 ${data.license}
-###Contributing
+### Contributing
 ${data.contributers}
-###Tests
+### Tests
 ${data.tests}
-###Questions
-Github username: ${data.gitHubUsername}
-Email: ${data.email}
-Project URL: ${data.link}
-Profile Picture: 
-![Image of contributer] (${data.photo})
+### Questions
+* Github username: ${data.gitHubUsername}
+* Email: ${data.email}
+* Project URL: ${data.link}
 
+<img src="${data.photo}"
+     alt="Contributer Photo"
+     style="float: left; margin-right: 10px;" />
     `, function(error) {
     if (error) {
         return console.log(error);
