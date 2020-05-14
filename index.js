@@ -76,7 +76,7 @@ ${data.description}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
- ### Installation
+### Installation
 ${data.installation}
 ###Usage
 ###License
@@ -89,7 +89,8 @@ ${data.tests}
 Github username: ${data.gitHubUsername}
 Email: ${data.email}
 Project URL: ${data.link}
-Profile Picture: ${data.photo}
+Profile Picture: 
+![Image of contributer] (${data.photo})
 
     `, function(error) {
     if (error) {
